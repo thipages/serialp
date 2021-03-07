@@ -1,6 +1,9 @@
 # serialp
 Run promises in sequence
 
+#installation
+jsbuild.json
+
 ## Usage
 ```javascript
 

@@ -6,7 +6,7 @@ export default {
     output: {
         file: './min.js',
         format: 'iife',
-        name: 'seriap'
+        name: 'serialp'
     },
     plugins: [
         resolve(),

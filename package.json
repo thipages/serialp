@@ -1,16 +1,18 @@
 {
-  "name": "seriap",
-  "version": "0.0.1",
+  "name": "serialp",
+  "version": "0.1.0",
   "description": "Promises in sequence",
   "keywords": [
-    "javascript","sequence","promises"
+    "javascript",
+    "sequence",
+    "promises"
   ],
   "author": "Thierry PAGES",
   "license": "MIT",
   "module": "esm/index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thipages/seriap.git"
+    "url": "git+https://github.com/thipages/serialp.git"
   },
   "dependencies": {},
   "devDependencies": {

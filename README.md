@@ -1,7 +1,7 @@
 # serialp
 Run promises in sequence
 
-#installation
+## installation
 _npm i serialp_
 
 ## Usage

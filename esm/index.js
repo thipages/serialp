@@ -16,4 +16,4 @@ export default async (promises, observer=true)=> {
         } else if (!next(i,success,result)) break;
     }
     return results;
-}
+};

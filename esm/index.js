@@ -11,6 +11,8 @@ export default async (promises, observer)=> {
             success=false;
         }
         results.push([success,result]);
+        // todo : implement async function
+        // can be checked with myFunction.constructor.name === "AsyncFunction";
         if (!next(i,success,result)) break;
     }
     return results;

@@ -2,7 +2,7 @@
 Run promises in sequence
 
 #installation
-jsbuild.json
+_npm i serialp_
 
 ## Usage
 ```javascript
@@ -19,4 +19,4 @@ _observer_ is
 - either a _function (index,success,result)_ which returns a boolean.
 - or a _boolean_  
 
-if observer returns false, promises execution stops
+if observer returns false, promises execution stops.

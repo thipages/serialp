@@ -56,14 +56,25 @@ const testData=entries.reduce(
         return res;
     },[]
 );
-serialp(testData,(index,success,data)=>{
-    console.log(`test ${index} is ${data[0]}`);
-    if (!data[0]) {
-        console.log('result:'+data[1]);
-        console.log('expected:'+data[2]);
+serialp(testData,(index,success,result,results)=>{
+    console.log(`test ${index} is ${result[0]}`);
+    if (!result[0]) {
+        console.log('result:'+result[1]);
+        console.log('expected:'+result[2]);
     }
-    return data[0];
+    return result[0];
 })
+// todo : finalize async tests
+/*serialp(testData, async(index,success,result,results)=> {
+    await new Promise((resolve,reject) => {
+        setTimeout(reject(results), 500)
+    })
+    return true;
+}).then(
+    x=>console.log('then',x)
+).catch(
+    x=>console.log('catch',x)
+);*/
 
 
 

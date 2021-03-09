@@ -1,5 +1,9 @@
 export default async (promises, observer=true)=> {
-    const next=(i,s,r,rs)=>typeof observer==='function'?observer(i,s,r,rs):observer;
+    const next=(i,s,r,rs)=>typeof observer==='function'
+            ? observer(i,s,r,rs)
+            : observer
+                ? observer
+                : s;
     const results = [];
     for (let i=0;i<promises.length;i++) {
         let result,success;

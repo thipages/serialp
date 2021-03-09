@@ -27,7 +27,12 @@ const test_function_cases =[
         JSON.stringify([[true,10],[true,20],[true,30]])
     ],
     [
-        [()=>false,false, (index,success,result)=>index<0], // useless cases
+        [false],
+        timeouts([true,false,true]),
+        JSON.stringify([[true,10],[false,20]])
+    ],
+    [
+        [()=>false, (index,success,result)=>index<0],
         timeouts([true,false,true]),
         JSON.stringify([[true,10]])
     ],

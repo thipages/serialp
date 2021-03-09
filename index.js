@@ -13,7 +13,7 @@ var index = async (promises, observer=true)=> {
         results.push([success,result]);
         if (observer.constructor.name === "AsyncFunction") {
             if (!await next(i,success,result,results)) break;
-        } else if (!next(i,success,result)) break;
+        } else if (!next(i,success,result,results)) break;
     }
     return results;
 };
